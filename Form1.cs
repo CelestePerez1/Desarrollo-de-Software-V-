@@ -4,7 +4,7 @@ using System.Windows.Forms;
 namespace ProyectoGitGUI
 {
     public partial class Form1 : Form
-    {
+    {   // variables del formulario
         private Label etiqueta;
         private TextBox entrada;
         private Button boton;
@@ -32,9 +32,9 @@ namespace ProyectoGitGUI
             entrada.Width = 200;
             this.Controls.Add(entrada);
 
-            // Botón
+            // BotÃ³n
             boton = new Button();
-            boton.Text = "Haz clic aquí";
+            boton.Text = "Haz clic aquÃ­";
             boton.Top = 120;
             boton.Left = 120;
             boton.Width = 120;
@@ -49,11 +49,11 @@ namespace ProyectoGitGUI
             string texto = entrada.Text.Trim();
             if (string.IsNullOrEmpty(texto))
             {
-                MessageBox.Show("¡Hola desde Git GUI en C#!");
+                MessageBox.Show("Â¡Hola desde Git GUI en C#!");
             }
             else
             {
-                MessageBox.Show("Hola " + texto + ", estás usando Git GUI en C#!");
+                MessageBox.Show("Hola " + texto + ", estÃ¡s usando Git GUI en C#!");
             }
 
 
@@ -61,3 +61,4 @@ namespace ProyectoGitGUI
 
     }
 }
+
